@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* COLOR SYSTEM */
+
+:root {
+  --light-blue: #eef6ff;
+  --mid-blue: #dcecff;
+  --accent-blue: #4a90e2;
+  --dark-blue: #1f3a5f;
+  --card-bg: #ffffff;
+}
+
+
+/* GLOBAL STYLING */
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: var(--light-blue);
+  color: var(--dark-blue);
+  margin: 0;
+  line-height: 1.7;
+}
+
+
+/* CONTAINER WIDTH */
+
+.container {
+  width: 90%;
+  max-width: 1050px;
+  margin: auto;
+}
+
+
+/* NAVBAR */
+
+.nav {
+  background: white;
+  border-bottom: 2px solid var(--mid-blue);
+  position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark-blue);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--accent-blue);
+}
+
+.active {
+  color: var(--accent-blue);
+}
+
+
+/* PAGE TITLE BLOCK */
+
+.page-title {
+  background: var(--mid-blue);
+  padding: 35px;
+  border-radius: 12px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+/* SECTION BLOCKS */
+
+.section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+/* TWO COLUMN LAYOUT */
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+
+/* INFO CARDS */
+
+.card {
+  background: var(--light-blue);
+  padding: 22px;
+  border-radius: 10px;
+}
+
+
+/* GRID FOR PAGE LINKS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+
+/* GRID NAVIGATION CARDS */
+
+.grid-card {
+  display: block;
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--dark-blue);
+  border: 2px solid var(--mid-blue);
+  transition: 0.2s ease;
+}
+
+.grid-card:hover {
+  background: var(--mid-blue);
+  transform: translateY(-4px);
+}
+
+
+/* LIST STYLING */
+
+ul {
+  padding-left: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+  background: white;
+  border-top: 2px solid var(--mid-blue);
+}
