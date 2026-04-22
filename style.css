@@ -430,3 +430,12 @@ footer {
   vertical-align: middle;
   margin-right: 8px;
 }
+
+.identity-image {
+  display: block;
+  width: 90%;
+  max-width: 900px;
+  height: 300px;
+  object-fit: cover;
+  margin: 30px auto;
+}
